@@ -10,7 +10,8 @@ api_key = config2.APIKey
 api_secret = config2.SecretKey
 
 # Set up the Binance client
-client = Client(api_key, api_secret)
+#client = Client(api_key, api_secret)
+client = Client(api_key, api_secret,tld='us')
 
 # Function to fetch historical cryptocurrency data from Binance
 def get_crypto_data_binance(symbol, start_date, end_date, timeframe):
